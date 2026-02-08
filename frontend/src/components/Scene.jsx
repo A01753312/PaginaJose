@@ -1,23 +1,34 @@
-import { Canvas } from '@react-three/fiber';
-import { Float, Sphere, MeshDistortMaterial, OrbitControls, Stars } from '@react-three/drei';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Float, Stars } from '@react-three/drei';
+import { useRef } from 'react';
+import * as THREE from 'three';
 
 function FloatingShape() {
+  const meshRef = useRef();
+  
+  useFrame((state) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.3) * 0.2;
+      meshRef.current.rotation.y += 0.003;
+    }
+  });
+
   return (
     <Float
       speed={2}
       rotationIntensity={0.5}
       floatIntensity={1}
     >
-      <Sphere args={[1, 64, 64]} scale={2.5}>
-        <MeshDistortMaterial
+      <mesh ref={meshRef} scale={2.5}>
+        <icosahedronGeometry args={[1, 1]} />
+        <meshStandardMaterial
           color="#7000FF"
-          attach="material"
-          distort={0.4}
-          speed={2}
           roughness={0.2}
           metalness={0.8}
+          emissive="#7000FF"
+          emissiveIntensity={0.3}
         />
-      </Sphere>
+      </mesh>
     </Float>
   );
 }
@@ -34,7 +45,6 @@ export default function Scene() {
       <spotLight position={[-10, -10, -10]} angle={0.15} penumbra={1} intensity={0.5} color="#00F0FF" />
       <FloatingShape />
       <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
-      <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
     </Canvas>
   );
 }
