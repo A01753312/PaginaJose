@@ -1,0 +1,154 @@
+{
+  "identity": {
+    "name": "Salesport",
+    "tagline": "Escalamos tu negocio con Marketing e Inteligencia Artificial",
+    "tone": "Futuristic, Professional, High-Performance, Trustworthy",
+    "archetype": "The Visionary Architect (Mix of Archetype 7: Electric & Neon and Archetype 4: Swiss High-Contrast)"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Syne, sans-serif",
+      "weights": ["700", "800"],
+      "usage": "Hero titles, Section headers. Use tight tracking (-0.02em).",
+      "fallback": "Space Grotesk"
+    },
+    "body": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Paragraphs, UI elements, Buttons.",
+      "fallback": "Inter"
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Code snippets, data metrics, small labels."
+    }
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#030014",
+      "surface": "#0F0B29",
+      "surface_highlight": "#1A1445",
+      "primary": "#7000FF",
+      "primary_glow": "#A64DFF",
+      "secondary": "#00F0FF",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#94A3B8",
+      "border": "rgba(255, 255, 255, 0.1)"
+    },
+    "gradients": {
+      "hero_text": "linear-gradient(135deg, #FFFFFF 0%, #A64DFF 100%)",
+      "card_border": "linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0))",
+      "button_primary": "linear-gradient(90deg, #7000FF 0%, #4D00B3 100%)"
+    }
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "spacing": {
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-8"
+    },
+    "grid_system": "Bento Grid (Mode A) for Services and Features. Asymmetric layouts for storytelling."
+  },
+  "components": {
+    "navbar": {
+      "style": "Floating Glassmorphism",
+      "classes": "fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl bg-black/40 backdrop-blur-xl border border-white/10 rounded-full z-50 px-6 py-4 flex justify-between items-center"
+    },
+    "buttons": {
+      "primary": "rounded-full bg-primary text-white px-8 py-4 font-bold hover:shadow-[0_0_20px_rgba(112,0,255,0.5)] transition-all duration-300 hover:scale-105",
+      "secondary": "rounded-full border border-white/20 bg-transparent text-white px-8 py-4 hover:bg-white/10 transition-all"
+    },
+    "cards": {
+      "style": "Glassmorphism with Spotlight",
+      "classes": "bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:border-primary/50 transition-colors duration-300 group relative overflow-hidden"
+    }
+  },
+  "three_js_strategy": {
+    "library": "@react-three/fiber @react-three/drei",
+    "hero_scene": {
+      "concept": "Floating Abstract Intelligence",
+      "elements": [
+        "Use <Float> wrapper for gentle movement",
+        "Geometry: Icosahedron or TorusKnot",
+        "Material: <MeshTransmissionMaterial> (glassy, distorting background) or <MeshDistortMaterial> (liquid metal)",
+        "Lighting: AmbientLight (0.5) + SpotLight (purple/blue) + Environment (City preset)"
+      ],
+      "background": "Use <Stars> or <Sparkles> for depth without performance cost."
+    },
+    "scroll_effects": "Use framer-motion for HTML elements entering view. Do not over-engineer 3D scroll unless necessary for performance."
+  },
+  "content_map": {
+    "hero": {
+      "headline": "Escalamos tu negocio con Marketing e Inteligencia Artificial",
+      "subheadline": "Tu partner en crecimiento exponencial. Automatizamos ventas y optimizamos resultados.",
+      "cta": "Ver Soluciones"
+    },
+    "logos": {
+      "title": "Las Personas que Confiaron en Nosotros",
+      "urls": [
+        "https://saleshubagency.com/assets/1-By7do5mg.png",
+        "https://saleshubagency.com/assets/2-CJc_Gpqc.png",
+        "https://saleshubagency.com/assets/3-DrbjOhKW.png",
+        "https://saleshubagency.com/assets/4-BhMXe0FV.png",
+        "https://saleshubagency.com/assets/5-CEli3-mw.png",
+        "https://saleshubagency.com/assets/6-dHmKsnpp.png"
+      ]
+    },
+    "services": [
+      {
+        "title": "Campañas de Publicidad",
+        "desc": "Tráfico Calificado que Compra. Segmentación Avanzada con IA.",
+        "icon": "Target"
+      },
+      {
+        "title": "Contenido con IA",
+        "desc": "Omnipresencia Digital. Clonación de Voz y Avatares.",
+        "icon": "Video"
+      },
+      {
+        "title": "Automatizaciones",
+        "desc": "Tu Fuerza de Ventas 24/7. Chatbots con NLP Avanzado.",
+        "icon": "Bot"
+      },
+      {
+        "title": "Branding & Diseño",
+        "desc": "Ingeniería Visual para Vender. Identidad Estratégica.",
+        "icon": "Palette"
+      },
+      {
+        "title": "Dashboards",
+        "desc": "Control total con datos en tiempo real.",
+        "icon": "LayoutDashboard"
+      }
+    ],
+    "methodology": [
+      "1. Análisis (Auditoría y KPIs)",
+      "2. Estrategia (Plan personalizado)",
+      "3. Implementación (Ejecución precisa)",
+      "4. Optimización (Mejora continua)"
+    ]
+  },
+  "image_assets": {
+    "hero_bg": "https://images.unsplash.com/photo-1754738381739-5efb94a4525b?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "abstract_texture": "https://images.unsplash.com/photo-1690870968844-8f9fe1e62025?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "team_group": "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "team_laughing": "https://images.unsplash.com/photo-1757405934467-21fc25c60660?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALLATION: Run 'npm install three @types/three @react-three/fiber @react-three/drei framer-motion lucide-react clsx tailwind-merge' immediately.",
+    "2. FONT SETUP: Add 'Syne' and 'Outfit' from Google Fonts in index.html or CSS.",
+    "3. 3D IMPLEMENTATION: Create a separate component 'Scene.jsx' for the 3D canvas. Keep it lightweight. Use <Canvas dpr={[1, 2]}> for performance.",
+    "4. GLASSMORPHISM: Apply the glass classes defined in 'components.navbar' and 'components.cards' strictly.",
+    "5. IMAGES: Use the provided Unsplash URLs for backgrounds and the crawled logo URLs for the client section.",
+    "6. SECTIONS: Build Hero, Logo Marquee, Bento Grid Services, Methodology Steps, Testimonials, and Contact Form.",
+    "7. NO PLACEHOLDERS: Use the real content provided in 'content_map'.",
+    "8. DATA-TESTID: Add data-testid to all buttons and inputs."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for text unless it is the main H1.",
+    "Ensure all text has sufficient contrast against the dark background.",
+    "Use 'lucide-react' for icons.",
+    "Mobile responsiveness is priority #1. Stack the Bento grid on mobile."
+  ]
+}
