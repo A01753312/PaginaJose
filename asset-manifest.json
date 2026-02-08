@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PaginaJose/static/css/main.b5a0c9cd.css",
+    "main.js": "/PaginaJose/static/js/main.5bdc6c14.js",
+    "index.html": "/PaginaJose/index.html",
+    "main.b5a0c9cd.css.map": "/PaginaJose/static/css/main.b5a0c9cd.css.map",
+    "main.5bdc6c14.js.map": "/PaginaJose/static/js/main.5bdc6c14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5a0c9cd.css",
+    "static/js/main.5bdc6c14.js"
+  ]
+}
